@@ -1,5 +1,10 @@
 @charset "UTF-8";
+/*
 
+**********************************************/
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Days+One&display=swap");
 :root {
   /**
@@ -401,12 +406,8 @@ input { outline: none; }
 .services-item__content p { font-size: 15px; margin-bottom: 45px; }
 .services-item__tp-title { font-size: 24px; }
 .tp-services .services-p { margin-right: 20px; }
-.tp-services i { height: 50px; width: 50px; line-height: 50px; border: 1px solid var(--tp-border-secondary); border-radius: 50%; text-align: center; }
+.tp-services i { height: 50px; width: 50px; line-height: 50px; border: 1px solid var(--tp-border-secondary); border-radius: 50%; text-align: center; cursor: pointer; }
 .tp-services i:hover { border: 1px solid var(--tp-theme-primary); background-color: var(--tp-theme-primary); color: var(--tp-common-white); }
-.service-active { margin-right: -400px; }
-@media (max-width: 991px) {
-  .service-active { margin-right: 0; }
-}
 
 /*----------------------------------------*/
 /*  07. ABOUT CSS START
@@ -493,12 +494,13 @@ input { outline: none; }
   .tp-team__content { padding: 30px 25px 35px 25px; }
 }
 .tp-team__content p { color: var(--tp-text-2); margin-bottom: 30px; }
+.tp-team__position { font-size: 14px; font-weight: 700; color: var(--tp-icon-blue); text-transform: uppercase; display: block; }
 .tp-team-arrow { justify-content: end; }
 @media (max-width: 767px) {
   .tp-team-arrow { margin-bottom: 30px; justify-content: start; }
 }
 .tp-team-arrow .team-p { margin-right: 20px; }
-.tp-team-arrow i { display: inline-block; height: 50px; width: 50px; line-height: 50px; text-align: center; border-radius: 50%; border: 1px solid var(--tp-border-secondary); }
+.tp-team-arrow i { display: inline-block; height: 50px; width: 50px; line-height: 50px; text-align: center; border-radius: 50%; border: 1px solid var(--tp-border-secondary); cursor: pointer; }
 .tp-team-arrow i:hover { background-color: var(--tp-theme-primary); color: var(--tp-common-white); border: 1px solid var(--tp-theme-primary); }
 .tp-team { border: 1px solid var(--tp-grey-1); }
 
@@ -514,7 +516,7 @@ input { outline: none; }
 .tp-testi__content p { font-size: 15px; color: var(--tp-text-2); margin-bottom: 35px; }
 .tp-testi__avata-title { font-family: "Archivo", sans-serif; font-weight: 600; font-size: 18px; }
 .tp-test-arrow .tp-test-nxt { margin-left: 20px; }
-.tp-test-arrow i { height: 50px; width: 50px; text-align: center; line-height: 50px; border-radius: 50%; border: 1px solid #D1D6E0; }
+.tp-test-arrow i { height: 50px; width: 50px; text-align: center; line-height: 50px; border-radius: 50%; border: 1px solid #D1D6E0; cursor: pointer; }
 .tp-test-arrow i:hover { border: 1px solid var(--tp-heading-primary); background-color: var(--tp-heading-primary); color: var(--tp-common-white); }
 .testimonial-bg { background-repeat: no-repeat; background-size: cover; }
 
@@ -543,6 +545,7 @@ input { outline: none; }
         max-width: 350px;
         text-align: center;
         padding-left: 0;
+        margin-bottom: 40px;
     }
     .google-map-section .info-section .info-inner .single-info-box .icon-box {
         position: static;
@@ -550,12 +553,9 @@ input { outline: none; }
     }
 }
 
-
 /*----------------------------------------*/
 /*  22. FOOTER CSS START
 /*----------------------------------------*/
-.footer-widget__title { color: var(--tp-common-white); font-size: 24px; }
-.footer-widget p { color: var(--tp-text-1); font-size: 15px; margin-bottom: 35px; }
 .footer-area-bottom { padding: 30px 0; border-top: 1px solid #251F5B; }
 .footer-widget__copyright span { color: var(--tp-common-white); font-size: 15px; font-weight: 500; }
 @media (max-width: 767px) {
@@ -567,9 +567,7 @@ input { outline: none; }
 .footer-widget__copyright span i { font-style: normal; }
 .tp-footer-widget__social { display: flex; justify-content: flex-end; }
 @media (max-width: 767px) {
-    .tp-footer-widget__social {
-        justify-content: center;
-    }
+    .tp-footer-widget__social { justify-content: center; }
 }
 .fw-social a { color: #B2B0C1; margin: 0 10px; }
 .fw-social a i { font-size: 16px; }
